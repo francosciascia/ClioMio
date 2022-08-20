@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+ 
+body {
+    background-image: linear-gradient(to right, red, yellow, blue, green);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+    text-align: center;
+
+}
+
+header {
+    background-color: #292929;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+    z-index: 10;
+    grid-area: header;
+}
+
+header:hover {
+    transform:skew(5deg, 30deg)
+}
+
+.nav-principal {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+
+.nav-principal a {
+    color: #ffffff;
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-principal :hover{
+    filter:brightness(60%);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.divlinkss {
+    right:15px;
+    margin: 30px;
+    position: absolute;
+}
+
+.classbar:hover {
+    transform: skew(10deg,10deg)
+}
+
+.mainbar {
+    background-color:rgb(238, 235, 235);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footerbar {
+    background-color: #2b2c2d;
+    height: 80px;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+.h1bar {
+    margin-bottom: 30px;
+}
+
+.h3bar {
+    color: #ffffff;
+    text-align: center;
+}
+
+.divlinkssfooter {
+    display:none;
+}
+
+.tablebar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* --experiencia-- */
+
+.lorembar {
+    display: grid;
+    grid-column:2;
+    width:100%
+}
+
+.lorembar2 {
+    display: grid;
+    grid-column:3;
+    grid-row:1;
+    width:100%;
+}
+
+.imagen1 {
+    display: grid;
+    grid-column:1;
+    grid-row:2;
+    margin: 40px;
+}
+
+.imagen2 {
+    display: grid;
+    grid-column:3;
+    grid-row:2;
+    margin: 40px;
+}
+
+.clio-index {
+    width: 600px;
+    height: 500px;
+}
+
+
+ /* aca empieza el responsive */
+ @media (max-width: 768px) {
+        body {
+        background-color: rgb(255, 255, 255);
+        font-family: 'Ubuntu', sans-serif;
+        width:100%;
+        margin:0;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        background-color: #2b2c2d;
+        text-decoration: none;
+        border: solid;
+        border-width: 1px;
+        width:100%
+    }
+    
+    .ulbar {
+        display: flex;
+        list-style: none;
+        text-decoration: none !important;
+        color: black !important;
+        flex-direction:row;
+        top:0;
+    }
+    
+    .divlinkss {
+        display:none;
+    }
+    
+    .mainbar {
+        background-color:rgb(238, 235, 235);
+        border-radius: 10px;
+        width:100%;
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .h1bar {
+        text-align: center;
+        text-decoration: none;
+        font-size: 40px;
+    }
+
+    .clio-index {
+        width: 300px;
+        height: 230px;
+    }
+    
+    .classbar {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        flex-direction:column;
+        align-items: center;
+    }
+    
+    .tablebar {
+        background-image: url(https://www.autodato.com/wp-content/uploads/2013/12/Renault-Clio-Mio-Argentina.jpg);
+        background-position: center left;
+        background-repeat: no-repeat;
+        font-family: 'sans-serif'; 
+        text-justify: auto;
+        font-weight: bold; 
+        padding-top: 15%;
+        padding-bottom:10%;
+        margin:5%;
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+    
+    .flex-container {
+        display: flex;
+        border: black;
+        font-family: 'sans-serif';
+        flex-direction:row;
+        text-align: justify;
+        justify-content:space-around;
+        flex-direction:column;
+        width:100%;
+    }
+
+    .div-video {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .videobar {
+        width:100%;
+        font-size:2%;
+        margin: 5%;
+    } 
+
+    .footerbar {
+        background-color: #2b2c2d;
+        border: solid;
+        padding-left: 1px;
+        margin: 0%;
+        display:flex;
+        text-align:row;
+        justify-content:space-between;
+    }
+
+    .h3bar {
+        font-size: 10pt;
+    }
+
+    .divlinkssfooter {
+        display:flex;
+        text-align:end;
+        justify-content:end;
+    }
+
+    /* -- experiencia -- */
+
+    .lorembar {
+        grid-column:1;
+        grid-row:3;
+    }
+    
+    .lorembar2 {
+        display: grid;
+        grid-column:1;
+        grid-row:5;
+    }
+    
+    .imagen1 {
+        display: grid;
+        grid-column:1;
+        grid-row:6;
+        margin: 40px;
+    }
+    
+    .imagen2 {
+        display: grid;
+        grid-column:1;
+        grid-row:4;
+        margin: 40px;
+    }
+    
+    .contamos {
+        display: grid;
+        grid-column: 1;
+        grid-row:1;
+    }
+
+    .imagen3 {
+        display: grid;
+        grid-column:1;
+        grid-row:2;
+    }
+
+    .clio-experiencia {
+        width: 100vw;
+    }
+
+    .clio-servicios {
+        width: 100vw;
+    }
+}
+
+
+
