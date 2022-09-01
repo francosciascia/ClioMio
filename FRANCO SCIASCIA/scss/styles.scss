@@ -1,0 +1,484 @@
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none !important;
+    text-decoration: none !important;
+}
+ 
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-image: linear-gradient (45deg,red,blue,green,yellow)
+}
+
+main {
+    text-align: right;
+    text-align:justify
+}
+
+header {
+    background-color: $background-color-header;
+    top: 0 !important;
+    margin:0 important;
+    width: 100%;
+    height: 90px;
+    display:$G;
+    $gtc: 2;
+    $gtr: 1;
+
+}
+
+.nav-principal {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    
+}
+
+.ulbar {
+    display: flex !important;
+    list-style: none !important;
+    text-decoration: none !important;
+    color: black !important;
+    flex-direction:row !important;
+    top:0;
+    gap:20px;
+    margin-top:50px;
+    margin-left:50px;
+    
+}
+
+.nav-principal a {
+    color: #ffffff;
+    display: flex;
+    margin-right: 20px;
+    margin:10px;
+    
+}
+
+.nav-principal :hover{
+    filter:brightness(60%) !important;
+}
+
+.navbar {
+    display: flex !important;
+    flex-direction: row;
+    text-decoration: none !important;
+}
+
+.divlinkss {
+    display:flex;
+    flex-direction: row;
+    flex-direction:flex-end;
+    margin-bottom:10px;
+    margin-right:5px;
+    margin-top:5px;
+}
+
+.mainbar {
+    background-color:rgb(238, 235, 235);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.footerbar {
+    height: 80px;
+    width: 100%;
+    margin-top: 15px;
+    color:azure;
+    text-align:center;
+    width: 100%;
+    color: #fff;
+    background: $lineargradient-footer;
+    background-size: 400% 400%;
+    position: relative;
+    animation: fondofooter 15s ease-in-out infinite;
+}
+.h3bar {
+    animation-duration:2s;
+    animation-name:h3bar;
+    animation-iteration-count: infinite;
+}
+
+.h1bar {
+    margin-bottom: 10px;
+    text-align:center;
+    margin-top:10px;
+    font-size:30pt;
+}
+
+.carrusel {
+  width:1000px;
+}
+
+.h3bar {
+    color: #ffffff;
+    text-align: center;
+}
+
+.divlinkssfooter {
+    display:none;
+}
+
+.div-video {
+    display:$G;
+    grid-column:2;
+}
+
+.grid-container {
+    display:$G;
+    grid-template-columns: 2;
+    $gtr: 1;
+}
+
+.tablebar {
+    font-family: 'sans-serif'; 
+    text-justify: auto;
+    font-weight: bold; 
+    margin:50px;
+    font-size: 22px;
+    padding-bottom:10%;
+    width:100%;
+    display:$G;
+    $gtc: 1;
+    $gtr: 1;
+}
+/* -- experiencia experiencia experiencia-- */
+
+.experiencia-grid {
+    display:$G;
+    $gtc: repeat(3 1fr);
+    $gtr:2;
+}
+
+.contamos {
+    display: $G;
+    grid-column:1;
+    grid-row:1;
+    width:100%
+}
+
+.lorembar {
+    display: $G;
+    grid-column:3;
+    grid-row:1;
+    width:100%
+}
+
+.lorembar2 {
+    display: $G;
+    grid-column:2;
+    grid-row:2;
+    width:100%;
+}
+
+.imagen1 {
+    display: $G;
+    grid-column:2;
+    grid-row:1;
+    margin: 40px;
+}
+
+.imagen2 {
+    display: $G;
+    grid-column:3;
+    grid-row:2;
+    margin: 40px;
+}
+
+.imagen3 {
+    display: $G;
+    grid-column:1;
+    grid-row:2;
+    margin: 40px;
+}
+/* -- contacto contacto contacto contacto -- */
+.contactobar {
+    display:$G;
+    $gtc: 1;
+    $gtr: 1;
+}
+
+.contactobar2 {
+    display:$G;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+.clio-index {
+    width: 600px;
+    height: 500px;
+}
+
+/* -- historia historia historia historia -- */
+
+.contenido {
+    display:grid;
+    $gtc: 2;
+    $gtr: 5;
+}
+
+.primeragen {
+    display:grid;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.foto1 {
+    display:grid;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.segundagen {
+    display:grid;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.foto2 {
+    display:grid;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.terceragen {
+    display:grid;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.foto3 {
+    display:grid;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.cuartagen {
+    display:grid;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.foto4 {
+    display:grid;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.quintagen {
+    display:grid;
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.foto5 {
+    display:grid;
+    grid-column: 2;
+    grid-row: 5;
+}
+/* -- efectos efectos efectos -- */
+@keyframes fondofooter {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes h3bar {
+    0% {
+opacity:0;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+ /* aca empieza el responsive */
+  /* aca empieza el responsive */
+   /* aca empieza el responsive */
+    /* aca empieza el responsive */
+     /* aca empieza el responsive */
+      /* aca empieza el responsive */
+
+ @media (max-width: 768px) {
+        body {
+        background-color: rgb(255, 255, 255);
+        font-family: 'Ubuntu', sans-serif;
+        width:100%;
+        margin:0;
+    }
+    
+    header {
+        height: 1%;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        background-color: #2b2c2d;
+        text-decoration: none;
+        border: solid;
+        border-width: 1px;
+        width:100%
+    }
+    
+    .ulbar {
+        display: flex !important;
+        list-style: none;
+        text-decoration: none !important;
+        color: black !important;
+        flex-direction:row !important;
+        top:0;
+    }
+    
+    .divlinkss {
+        display:none;
+    }
+    
+    .mainbar {
+        background-color:rgb(238, 235, 235);
+        border-radius: 10px;
+        width:100%;
+        display:flex;
+        flex-direction: column;
+
+    }
+    
+
+    .h1bar {
+        text-align: center;
+        text-decoration: none;
+        font-size: 40px;
+    }
+
+    .clio-index {
+        width: 300px;
+        height: 230px;
+    }
+    
+    .classbar {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .div-video {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        
+    }
+
+    .videobar {
+        width:100%;
+        font-size:2%;
+        margin: 5%;
+        display:grid;
+        grid-column:1;
+        grid-row:1;
+    } 
+
+    .footerbar {
+        background-color: #2b2c2d;
+        border: solid;
+        padding-left: 1px;
+        margin: 0%;
+        display:flex;
+        text-align:row;
+        justify-content:space-between;
+    }
+
+    .h3bar {
+        font-size: 10pt;
+    }
+
+    .divlinkssfooter {
+        display:flex;
+        text-align:end;
+        justify-content:end;
+    }
+
+    /* -- experiencia experiencia experiencia -- */
+
+    .lorembar {
+        grid-column:1;
+        grid-row:3;
+    }
+    
+    .lorembar2 {
+        display: grid;
+        grid-column:1;
+        grid-row:5;
+    }
+    
+    .imagen1 {
+        display: grid;
+        grid-column:1;
+        grid-row:6;
+        margin: 40px;
+    }
+    
+    .imagen2 {
+        display: grid;
+        grid-column:1;
+        grid-row:4;
+        margin: 40px;
+    }
+    
+    .contamos {
+        display: grid;
+        grid-column: 1;
+        grid-row:1;
+    }
+
+    .imagen3 {
+        display: grid;
+        grid-column:1;
+        grid-row:2;
+    }
+
+    .clio-experiencia {
+        width: 100vw;
+    }
+
+    .clio-servicios {
+        width: 100vw;
+    }
+
+    /* -- index index index index -- */
+    .contenido-index {
+        display:grid;
+        $gtc: 1;
+        $gtr: 2;
+    }
+
+    .div-video {
+        display:grid;
+        grid-column:1;
+        grid-row:1;
+        width:100%;
+    }
+
+    .tbody {
+        display:grid;
+        grid-column:1;
+        grid-row:2;
+    }
+}
