@@ -86,10 +86,7 @@ header {
   text-align: center;
   width: 100%;
   color: #fff;
-  background: linear-gradient(90deg, red, orange, yellow, lightgreen, green, blue, cyan, white);
-  background-size: 400% 400%;
-  position: relative;
-  animation: fondofooter 15s ease-in-out infinite;
+  background: #292929;
 }
 
 .h3bar {
@@ -268,28 +265,8 @@ header {
 }
 
 /* -- efectos efectos efectos -- */
-@keyframes fondofooter {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes h3bar {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+
+
 /* aca empieza el responsive */
 /* aca empieza el responsive */
 /* aca empieza el responsive */
