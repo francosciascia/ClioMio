@@ -1,0 +1,4 @@
+.h1bar {
+    @extend %h1bar !optional;
+    color:$hdr;
+}

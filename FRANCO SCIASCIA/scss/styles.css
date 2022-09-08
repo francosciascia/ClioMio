@@ -1,3 +1,14 @@
+.h1bar {
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30pt;
+}
+
+.h1bar {
+  color: black;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,10 +36,81 @@ header {
   display: grid;
 }
 
+.nav-principal {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+}
+
+.ulbar {
+  display: flex !important;
+  list-style: none !important;
+  text-decoration: none !important;
+  color: black !important;
+  flex-direction: row !important;
+  top: 0;
+  gap: 20px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.nav-principal a {
+  color: #ffffff;
+  display: flex;
+  margin-right: 20px;
+  margin: 10px;
+}
+
+.nav-principal :hover {
+  filter: brightness(60%) !important;
+}
+
+.navbar {
+  display: flex !important;
+  flex-direction: row;
+  text-decoration: none !important;
+}
+
+.divlinkss {
+  display: flex;
+  flex-direction: row;
+  flex-direction: flex-end;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
 .mainbar {
   background-color: rgb(238, 235, 235);
   border-radius: 10px;
-  margin:5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.footerbar {
+  height: 80px;
+  width: 100%;
+  margin-top: 15px;
+  color: azure;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  background: linear-gradient(90deg, red, orange, yellow, lightgreen, green, blue, cyan, white);
+  background-size: 400% 400%;
+  position: relative;
+  -webkit-animation: fondofooter 15s ease-in-out infinite;
+          animation: fondofooter 15s ease-in-out infinite;
+}
+
+.h3bar {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: h3bar;
+          animation-name: h3bar;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .h1bar {
@@ -40,6 +122,15 @@ header {
 
 .carrusel {
   width: 1000px;
+}
+
+.h3bar {
+  color: #ffffff;
+  text-align: center;
+}
+
+.divlinkssfooter {
+  display: none;
 }
 
 .div-video {
@@ -73,8 +164,6 @@ header {
   grid-column: 1;
   grid-row: 1;
   width: 100%;
-  margin-left:5px;
-  margin-right:0px;
 }
 
 .lorembar {
@@ -82,8 +171,6 @@ header {
   grid-column: 3;
   grid-row: 1;
   width: 100%;
-  margin-left:5px;
-  margin-right:5px;
 }
 
 .lorembar2 {
@@ -91,8 +178,6 @@ header {
   grid-column: 2;
   grid-row: 2;
   width: 100%;
-  margin-left:5px;
-  margin-right:5px;
 }
 
 .imagen1 {
@@ -100,7 +185,6 @@ header {
   grid-column: 2;
   grid-row: 1;
   margin: 40px;
-  width:auto;
 }
 
 .imagen2 {
@@ -108,7 +192,6 @@ header {
   grid-column: 3;
   grid-row: 2;
   margin: 40px;
-  width:auto;
 }
 
 .imagen3 {
@@ -116,7 +199,6 @@ header {
   grid-column: 1;
   grid-row: 2;
   margin: 40px;
-  width:auto;
 }
 
 /* -- contacto contacto contacto contacto -- */
@@ -136,15 +218,6 @@ header {
 }
 
 /* -- historia historia historia historia -- */
-.p1 {
-  margin-left:5px;
-  margin-right:5px;
-}
-
-.h-espacio {
-  margin-left:5px;
-}
-
 .contenido {
   display: grid;
 }
@@ -159,10 +232,6 @@ header {
   display: grid;
   grid-column: 2;
   grid-row: 1;
-  margin-bottom: 15px;
-  margin-top:15px;
-  margin-right:15px;
-  margin-left:15px;
 }
 
 .segundagen {
@@ -175,10 +244,6 @@ header {
   display: grid;
   grid-column: 2;
   grid-row: 2;
-  margin-bottom: 15px;
-  margin-top:15px;
-  margin-right:15px;
-  margin-left:15px;
 }
 
 .terceragen {
@@ -191,10 +256,6 @@ header {
   display: grid;
   grid-column: 2;
   grid-row: 3;
-  margin-bottom: 15px;
-  margin-top:15px;
-  margin-right:15px;
-  margin-left:15px;
 }
 
 .cuartagen {
@@ -207,10 +268,6 @@ header {
   display: grid;
   grid-column: 2;
   grid-row: 4;
-  margin-bottom: 15px;
-  margin-top:15px;
-  margin-right:15px;
-  margin-left:15px;
 }
 
 .quintagen {
@@ -223,22 +280,53 @@ header {
   display: grid;
   grid-column: 2;
   grid-row: 5;
-  margin-bottom: 15px;
-  margin-top:15px;
-  margin-right:15px;
-  margin-left:15px;
-}
-
-/* servicios servicios servicios  */
-.fotoservicios {
-  margin-left:5px;
-  margin-bottom:5px;
-  width:auto;
 }
 
 /* -- efectos efectos efectos -- */
-
-
+@-webkit-keyframes fondofooter {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes fondofooter {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes h3bar {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes h3bar {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /* aca empieza el responsive */
 /* aca empieza el responsive */
 /* aca empieza el responsive */
@@ -252,11 +340,9 @@ header {
     width: 100%;
     margin: 0;
   }
-
   header {
     height: 1%;
   }
-
   .navbar {
     display: flex;
     flex-direction: row;
@@ -266,26 +352,33 @@ header {
     border-width: 1px;
     width: 100%;
   }
-
+  .ulbar {
+    display: flex !important;
+    list-style: none;
+    text-decoration: none !important;
+    color: black !important;
+    flex-direction: row !important;
+    top: 0;
+  }
+  .divlinkss {
+    display: none;
+  }
   .mainbar {
     background-color: rgb(238, 235, 235);
-    border-radius: 1px;
-    width: 1fr;
+    border-radius: 10px;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
-
   .h1bar {
     text-align: center;
     text-decoration: none;
     font-size: 40px;
   }
-
   .clio-index {
     width: 300px;
     height: 230px;
   }
-
   .classbar {
     display: flex;
     justify-content: center;
@@ -293,14 +386,12 @@ header {
     flex-direction: column;
     align-items: center;
   }
-
   .div-video {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
   }
-
   .videobar {
     width: 100%;
     font-size: 2%;
@@ -309,192 +400,74 @@ header {
     grid-column: 1;
     grid-row: 1;
   }
-
+  .footerbar {
+    background-color: #2b2c2d;
+    border: solid;
+    padding-left: 1px;
+    margin: 0%;
+    display: flex;
+    text-align: row;
+    justify-content: space-between;
+  }
+  .h3bar {
+    font-size: 10pt;
+  }
   .divlinkssfooter {
     display: flex;
     text-align: end;
     justify-content: end;
   }
-
   /* -- experiencia experiencia experiencia -- */
   .lorembar {
     grid-column: 1;
     grid-row: 3;
-    width:100%;
-    margin-left:5px;
-    margin-right:15px;
   }
-
   .lorembar2 {
     display: grid;
     grid-column: 1;
     grid-row: 5;
-    width:100%;
-    margin-left:5px;
-    margin-right:10px;
   }
-
   .imagen1 {
     display: grid;
     grid-column: 1;
     grid-row: 6;
     margin: 40px;
-    width:auto;
   }
-
   .imagen2 {
     display: grid;
     grid-column: 1;
     grid-row: 4;
     margin: 40px;
-    width:auto;
   }
-
   .contamos {
     display: grid;
     grid-column: 1;
     grid-row: 1;
-    width:100%;
-    margin-left:5px;
-    margin-right:5px;
   }
-
   .imagen3 {
     display: grid;
     grid-column: 1;
     grid-row: 2;
-    width:auto;
   }
-
   .clio-experiencia {
     width: 100vw;
   }
-
   .clio-servicios {
     width: 100vw;
   }
-
   /* -- index index index index -- */
   .contenido-index {
     display: grid;
   }
-
   .div-video {
     display: grid;
     grid-column: 1;
     grid-row: 1;
     width: 100%;
   }
-  
   .tbody {
     display: grid;
     grid-column: 1;
     grid-row: 2;
   }
-
-  /* historia historia historia */
-
-  .contenido {
-    display:grid;
-    grid-template-columns: 1;
-    grid-template-rows: 10;
-  }
-
-  .primeragen {
-    display:grid;
-    grid-column: 1;
-    grid-row: 1;
-    margin-right: 15px;
-    margin-left:5px;
-  }
-
-  .foto1 {
-    display:grid;
-    grid-column: 1;
-    grid-row: 2;
-    margin-right: 15px;
-    margin-left: 5px;
-  }
-
-  .segundagen {
-    display:grid;
-    grid-column: 1;
-    grid-row: 3;
-    margin-right: 15px;
-    margin-left: 5px;
-  }
-
-  .foto2 {
-    display:grid;
-    grid-column: 1;
-    grid-row: 4;
-    margin-right: 15px;
-    margin-left: 5px;
-  }
-
-  .terceragen {
-    display:grid;
-    grid-column: 1;
-    grid-row: 5;
-    margin-right: 15px;
-    margin-left: 5px;
-  }
-
-  .foto3 {
-    display:grid;
-    grid-column: 1;
-    grid-row: 6;
-    margin-right: 15px;
-    margin-left: 5px;
-  }
-
-  .cuartagen {
-    display:grid;
-    grid-column: 1;
-    grid-row: 7;
-    margin-right: 15px;
-    margin-left: 5px;
-  }
-
-  .foto4 {
-    display:grid;
-    grid-column: 1;
-    grid-row: 8;
-    margin-right: 15px;
-    margin-left: 5px;
-  }
-
-  .quintagen {
-    display:grid;
-    grid-column: 1;
-    grid-row: 9;
-    margin-right: 15px;
-    margin-left: 5px;
-  }
-
-  .foto5 {
-    display:grid;
-    grid-column: 1;
-    grid-row: 10;
-    margin-right: 15px;
-    margin-left: 5px;
-  }
-
-  .p1 {
-    margin-left:5px;
-    margin-right:5px;
-  }
-
-  .imagen2 {
-    width: auto;
-  }
-
-  /* servicios servicios servicios */
-  .fotoservicios {
-    margin-left:5px;
-    margin-bottom:5px;
-    width:470px;
-  }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
