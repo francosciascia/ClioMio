@@ -75,14 +75,21 @@ header {
   grid-column: 1;
   grid-row: 1;
   width: 99%;
-  margin-left:5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-right:5px;
+  margin-top:10px;
 }
 
 .lorembar {
   display: grid;
   grid-column: 3;
   grid-row: 1;
-  width: 99%
+  width: 99%;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-right:5px;
+  margin-top:10px;
 }
 
 .lorembar2 {
@@ -90,6 +97,10 @@ header {
   grid-column: 2;
   grid-row: 2;
   width: 99%;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-right:5px;
+  margin-top:10px;
 }
 
 .imagen1 {
@@ -233,6 +244,12 @@ header {
   width:auto;
 }
 
+.texto-servicios {
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-right:5px;
+  margin-top:10px;
+}
 /* -- efectos efectos efectos -- */
 
 
@@ -318,7 +335,10 @@ header {
     grid-column: 1;
     grid-row: 3;
     width:98%;
-    margin-left:5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-right:5px;
+    margin-top:10px;
   }
 
   .lorembar2 {
@@ -326,7 +346,10 @@ header {
     grid-column: 1;
     grid-row: 5;
     width:98%;
-    margin-left:5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-right:5px;
+    margin-top:10px;
   }
 
   .imagen1 {
@@ -351,7 +374,10 @@ header {
     display: grid;
     grid-column: 1;
     grid-row: 1;
-    width:98%;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-right:5px;
+    margin-top:10px;
   }
 
   .imagen3 {
@@ -490,6 +516,13 @@ header {
     margin-left:5px;
     margin-bottom:5px;
     width:470px;
+  }
+  
+  .texto-servicios {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-right:5px;
+    margin-top:10px;
   }
 }
 
